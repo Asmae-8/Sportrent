@@ -42,10 +42,10 @@ public class SportrentApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         repositoryRestConfiguration.exposeIdsFor(Product.class,Category.class);
-        categoryRepository.save(new Category(null,null, "foot", null, null));
-        categoryRepository.save(new Category(null , null ,"Tennis", null, null));
-        categoryRepository.save(new Category(null,  null,"vollyball", null, null));
-        categoryRepository.save(new Category(null,  null,"surf", null, null));
+        categoryRepository.save(new Category( "foot"));
+        categoryRepository.save(new Category("Tennis"));
+        categoryRepository.save(new Category("vollyball"));
+        categoryRepository.save(new Category("surf"));
 
         Random rnd = new Random();
 

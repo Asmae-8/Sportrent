@@ -27,7 +27,17 @@ public class Category implements Serializable {
 
 
 
-    public Long getId() {
+	public Category() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Category(String name) {
+		super();
+		this.name = name;
+	}
+
+	public Long getId() {
         return id;
     }
 

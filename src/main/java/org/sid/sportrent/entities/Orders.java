@@ -15,7 +15,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-class Orders {
+public class Orders {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
